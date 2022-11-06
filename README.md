@@ -1,2 +1,0 @@
-# the-weekend-wanders-template
- 
