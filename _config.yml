@@ -33,17 +33,15 @@ _array_structures:
         icon: star
         value:
           _section-type: hero
-          hero:
-          hero-image:
           hero-color:
           hero-font: 
           content-block-link:
+          hero-image:
+          hero:
       - label: Text Area
         icon: article
         value:
           _section-type: textarea
-          textarea_html:
-          subheading_html:
           colors:
             background-color: 
             text-color: 
@@ -56,16 +54,12 @@ _array_structures:
             subheading-font: 
             text-font:  
           content-block-link: 
+          textarea_html:
+          subheading_html:
       - label: Carousel
         icon: view_carousel
         value:
           _section-type: carousel
-          heading:
-          carousel:
-            - textarea_html:
-              symbols: 
-              ending:
-          background_image:          
           colors:
             background-color: 
             heading-color:
@@ -97,19 +91,16 @@ _array_structures:
             subheading-font:
             text-font: 
           content-block-link: reviews
+          background_image:
+          heading: 
+          carousel:
+            - textarea_html:
+              symbols: 
+              ending:
       - label: Fig Hover Block
         icon: emoji_nature
         value: 
           _section-type: fig-hover-block
-          left:
-            heading:
-            background-image:
-          right:
-            subheading:
-            textarea:
-            background-image: 
-            button: 
-            button-link:
           colors:
             overlay-color: 
             background-color:
@@ -142,22 +133,19 @@ _array_structures:
             subheading-font:
             textarea-font: 
           content-block-link:
+          left:
+            heading:
+            background-image:
+          right:
+            subheading:
+            textarea:
+            background-image: 
+            button: 
+            button-link:
       - label: Zuko Hover Block
         icon: pets
         value: 
           _section-type: zuko-hover-block
-          left:
-            subheading:
-            textarea:
-            background-image: 
-            button:
-            button-link: 
-          right:
-            subheading: 
-            textarea:
-            background-image:
-            button: 
-            button-link: 
           colors:
             overlay-color: 
             background-color:
@@ -189,11 +177,29 @@ _array_structures:
             heading-font:
             subheading-font:
             textarea-font:
-          content-block-link:          
+          content-block-link:
+          left:
+            subheading:
+            textarea:
+            background-image: 
+            button:
+            button-link: 
+          right:
+            subheading: 
+            textarea:
+            background-image:
+            button: 
+            button-link:           
       - label: Gallery
         icon: photo_camera
         value:
           _section-type: gallery
+          colors:
+            background-color:
+            heading-color:
+          fonts:
+            heading-font:
+          content-block-link:
           heading: Gallery
           left:
             top-image:  
@@ -204,16 +210,19 @@ _array_structures:
           right:
             top-image:
             bottom-image: 
-          colors:
-            background-color:
-            heading-color:
-          fonts:
-            heading-font:
-          content-block-link:
       - label: Gallery with Links
         icon: link
         value:
           _section-type: gallery-with-links 
+          colors:
+            background-color: 
+            subheading-color: 
+            text-color: 
+            text-background-color: 
+          fonts:
+            subheading-font:
+            text-font:
+          content-block-link:
           subheading:
           images: 
             first-image: 
@@ -225,36 +234,10 @@ _array_structures:
             second-link: 
             third-link:  
             fourth-link:
-          colors:
-            background-color: 
-            subheading-color: 
-            text-color: 
-            text-background-color: 
-          fonts:
-            subheading-font:
-            text-font:
-          content-block-link:
       - label: Form
         icon: email
         value:
           _section-type: form
-          heading:
-          top:
-            subheading:
-            text-option-1:
-            text-option-2:
-            text-option-3:
-          bottom:
-            subheading: 
-            message:
-            option-box:
-              subject:
-              option-1: 
-              option-2: 
-              option-3:
-              option-4: 
-          button: 
-          background_image:        
           colors:
             background-color:
             textarea-background-color: 
@@ -286,33 +269,27 @@ _array_structures:
             text-font:
             button-font:
           content-block-link:
+          background_image:
+          heading:
+          top:
+            subheading:
+            text-option-1:
+            text-option-2:
+            text-option-3:
+          bottom:
+            subheading: 
+            message:
+            option-box:
+              subject:
+              option-1: 
+              option-2: 
+              option-3:
+              option-4: 
+          button:         
       - label: Media Kit
         icon: business_center
         value:
           _section-type: media-kit 
-          info:
-            title-1: 
-            title-2: 
-            title-3: 
-            title-4:
-            title-5: 
-          statistics:
-            bubble-1: 
-              data:
-              title:
-            bubble-2:
-              data: 
-              title: 
-            bubble-3:
-              data: 
-              title:
-            bubble-4:
-              data: 
-              title:
-          text-area:
-            subheading: 
-            textarea_html: 
-          image:
           colors:
             top-background-color: 
             bottom-background-color: 
@@ -337,6 +314,29 @@ _array_structures:
             statistic-title-font: 
             subheading-font: 
             textarea-font: 
+          image:
+          info:
+            title-1: 
+            title-2: 
+            title-3: 
+            title-4:
+            title-5: 
+          statistics:
+            bubble-1: 
+              data:
+              title:
+            bubble-2:
+              data: 
+              title: 
+            bubble-3:
+              data: 
+              title:
+            bubble-4:
+              data: 
+              title:
+          text-area:
+            subheading: 
+            textarea_html: 
 fonts:
 _select_data:
   fonts:
