@@ -21,7 +21,7 @@ _inputs:
     comment: This is to change the color of the text on mobile only.
   insert-script-here:
     comment: If you have an email list that you'd like your audience to subscript to, you can add the script here.
-  scripts-to-go-in-the-head:
+  frist-script-to-go-in-the-head:
    comment: You can add up to 3 different scripts like Google Ananlytics, scripts for newsletter sign ups, Facebook Pixel, etc.
 
 page_blocks: []
