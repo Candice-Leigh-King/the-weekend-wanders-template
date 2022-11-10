@@ -342,7 +342,7 @@ _array_structures:
             subheading-font: 
             textarea-font: 
       - label: Newsletter Script
-        icon: letter
+        icon: forum
         value:
           _section-type: newsletter-script
           insert-script-here: 
