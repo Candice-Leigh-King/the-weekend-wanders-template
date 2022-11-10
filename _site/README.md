@@ -1,2 +1,2 @@
-# TTL-website-template
+# the-weekend-wanders-template
  

@@ -37,10 +37,10 @@
       <meta name="twitter:image:alt" content="/images/website-template-by-chas.jpg" />
 
       <!-- link to browser icon tag -->
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
+      <link rel="icon" href="/uploads/weekend-wanders-logo-final-logo-no-handle.ico" type="image/x-icon" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/uploads/weekend-wanders-logo-final-logo-no-handle.ico" />
+      <link rel="icon" type="image/x-icon" sizes="32x32" href="/uploads/weekend-wanders-logo-final-logo-no-handle.ico" />
+      <link rel="icon" type="image/x-icon" sizes="16x16" href="/uploads/weekend-wanders-logo-final-logo-no-handle.ico" />
       <link rel="manifest" href="/site.webmanifest" />
 
       <!-- GOOGLE FONTS -->
@@ -53,7 +53,27 @@
     <!-- iconify icons -->
    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
    
-
+   <script>
+    (function(w, d, t, h, s, n) {
+      w.FlodeskObject = n;
+      var fn = function() {
+        (w[n].q = w[n].q || []).push(arguments);
+      };
+      w[n] = w[n] || fn;
+      var f = d.getElementsByTagName(t)[0];
+      var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+      var sm = d.createElement(t);
+      sm.async = true;
+      sm.type = 'module';
+      sm.src = h + s + '.mjs' + v;
+      f.parentNode.insertBefore(sm, f);
+      var sn = d.createElement(t);
+      sn.async = true;
+      sn.noModule = true;
+      sn.src = h + s + '.js' + v;
+      f.parentNode.insertBefore(sn, f);
+    })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+  </script>
     
 
       <!-- Gridlex -->
@@ -75,32 +95,32 @@
           /* --------------NAVIGATION------------ */
         
           --hamburgerColor: #ffffff;
-          --backgroundColor: #859f9f;
-          --textareaBackgroundColor: #bccaca;
+          --backgroundColor: #a1a7a7;
+          --textareaBackgroundColor: #b5bfaf;
           --BorderColor: #ffffff;
           --topLeftCorner: 100%;
           --topRightCorner: 100%;
           --bottomLeftCorner: 0%;
           --bottomRightCorner: 0%;
           --linkColor: #2f3031;
-          --linkFont: Shrikhand, cursive;;
+          --linkFont: La Obrige;
           --HoverLinkColor: #ffffff;
-          --iconColor: #859f9f;
+          --iconColor: #b5bfaf;
           --navSocialsBorderTopRight: 0px;
           --navSocialsBorderTopLeft: 100px;
           --navSocialsBorderBottomRight: 100px;
           --navSocialsBorderBottomLeft: 0px;
           --iconBackgroundColor: #ffffff;
-          --iconBorderColor: #d2966d;
-          --iconHoverColor: #d2966d;
+          --iconBorderColor: ;
+          --iconHoverColor: #ece7e1;
           --exitColor: #2f3031;
           --exitHoverColor: #ffffff;
 
           /* -------------FOOTER----------- */
-          --footerBackgroundColor: #FFFFFF;
-          --footerBorderColor: #D2966D;
-          --socialIconsBackgroundColor: #D2966D;
-          --subfooterHoverColor: #859F9F;
+          --footerBackgroundColor: #ffffff;
+          --footerBorderColor: #ece7e1;
+          --socialIconsBackgroundColor: #b5bfaf;
+          --subfooterHoverColor: #ece7e1;
           --subfooterFont: Raleway, sans-serif;
 
           --editor-panel-zindex: 90;
@@ -258,7 +278,7 @@
     <!-- <header class="grid-center">
       <div class=" col-11 center mob-hide">
         <a href="/" class="logo-home center "> 
-          <img src="/images/logo.png" alt="Through the Lyns Logo" /></a>
+          <img src="/uploads/weekend-wanders-logo-final-logo-no-handle.png" alt="The Weekend Wanders Logo" /></a>
       </div>
       <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
       </p>
@@ -269,7 +289,7 @@
          
           <div class=" col-12 grid-center  ">
             <a href="/" class="logo center grow col-12-middle exit"> 
-              <img src="/images/logo.png" alt="Through the Lyns Logo" />
+              <img src="/uploads/weekend-wanders-logo-final-logo-no-handle.png" alt="The Weekend Wanders Logo" />
             </a>
             <div class="editable col-12 padded-sides text-med exit navigation-links">
               <p><a class="" href="/#services">services</a></p>
@@ -278,10 +298,10 @@
               <p><a class="" href="/#contact">contact</a></p>
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
-              <a class="padded-s" href="https://www.instagram.com/candy_and_the_king/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
-              <a class="padded-s" href="https://www.facebook.com/candy.and.the.king/"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
-              <a class="padded-s" href="//www.tiktok.com/@candy_and_the_king"><span class="iconify" data-icon="brandico:facebook"></span></a>
-              <a class="padded-s" href="https://www.youtube.com/c/candyandtheking"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+              <a class="padded-s" href="https://www.instagram.com/the.weekend.wanders/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+              <a class="padded-s" href="https://www.facebook.com/thewkndwanders"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+              <a class="padded-s" href="https://www.tiktok.com/@the.weekend.wanders"><span class="iconify" data-icon="brandico:facebook"></span></a>
+              <a class="padded-s" href="https://www.youtube.com/channel/UCsQ4mlU6dsMHGaRxJ5yDhdA"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
 
           </div>
             
@@ -293,7 +313,7 @@
     <header class="grid-center">
       <div class=" col-11 center mob-hide" style="z-index: 100;">
         <a href="/" class="logo-home center "> 
-          <img src="/images/logo.png" alt="Through the Lyns Logo" /></a>
+          <img src="/uploads/weekend-wanders-logo-final-logo-no-handle.png" alt="The Weekend Wanders Logo" /></a>
       </div>
       <p class=" col-1-middle fixed hamburger-color hamburger padded" style="z-index: 100;"> ☰
       </p>
@@ -304,16 +324,16 @@
          
           <div class=" col-12 grid-center  ">
             <a href="/" class="logo center grow col-12-middle exit"> 
-              <img src="/images/logo.png" alt="Through the Lyns Logo" />
+              <img src="/uploads/weekend-wanders-logo-final-logo-no-handle.png" alt="The Weekend Wanders Logo" />
             </a>
             <div class="col-12 padded-sides text-med exit navigation-links">
-              <p><p><a href="/#services">services</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p></p>
+              <p><p><a href="/#services">services</a></p><p><a href="/#about">about</a></p><p><a href="/#reviews">review</a></p><p><a href="/#gallery">gallery</a></p><p><a href="/#contact">contact</a></p><p><a href="/#blog">blog</a></p><p><a href="/media-kit.html">media kit</a></p></p>
             </div>
             <div class=" col-6_xs-9 grid-center navigation-socials">
-              <a class="padded-s" href="https://www.instagram.com/candy_and_the_king/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
-              <a class="padded-s" href="//www.tiktok.com/@candy_and_the_king"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
-              <a class="padded-s" href="https://www.facebook.com/candy.and.the.king/"><span class="iconify" data-icon="brandico:facebook"></span></a>
-              <a class="padded-s" href="https://www.youtube.com/c/candyandtheking"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
+              <a class="padded-s" href="https://www.instagram.com/the.weekend.wanders/"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+              <a class="padded-s" href="https://www.tiktok.com/@the.weekend.wanders"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+              <a class="padded-s" href="https://www.facebook.com/thewkndwanders"><span class="iconify" data-icon="brandico:facebook"></span></a>
+              <a class="padded-s" href="https://www.youtube.com/channel/UCsQ4mlU6dsMHGaRxJ5yDhdA"><span class="iconify" data-icon="dashicons:youtube"></span></a> 
 
           </div>
             
@@ -325,19 +345,19 @@
 
     <style>
   .background-color 
-  {background-color: #bccaca;}
+  {background-color: #b5bfaf;}
 
   .heading-color 
-  {color: #FFFFFF;}
+  {color: #ffffff;}
 
  .heading-font 
-  {font-family: Shrikhand, cursive;}
+  {font-family: La Obrige;}
 
   .text-color 
   {color: #2f3031;}
 
  .text-font 
-  {font-family: Raleway, sans-serif;}
+  {font-family: Poppins, sans-serif;}
 
 </style>
 <section class="grid-center padded background-color">
@@ -351,17 +371,17 @@
 
     <footer class="grid-center padded-top footer-background-color featured-bg">
       <div class="col-12 social-icons-color socials">
-        <a href="https://www.instagram.com/candy_and_the_king/" class="margin ig"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
-        <a href="https://www.facebook.com/candy.and.the.king/" class="margin fb "><span class="iconify" data-icon="brandico:facebook"></span></a>
-        <a href="//www.tiktok.com/@candy_and_the_king" class="margin tt"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
-        <a href="https://www.youtube.com/c/candyandtheking" class="margin yt "><span class="iconify" data-icon="dashicons:youtube"></span></a>
+        <a href="https://www.instagram.com/the.weekend.wanders/" class="margin ig"><span class="iconify" data-icon="ph:instagram-logo-fill"></span></a>
+        <a href="https://www.facebook.com/thewkndwanders" class="margin fb "><span class="iconify" data-icon="brandico:facebook"></span></a>
+        <a href="https://www.tiktok.com/@the.weekend.wanders" class="margin tt"><span class="iconify" data-icon="simple-icons:tiktok"></span></a>
+        <a href="https://www.youtube.com/channel/UCsQ4mlU6dsMHGaRxJ5yDhdA" class="margin yt "><span class="iconify" data-icon="dashicons:youtube"></span></a>
       </div>
     </footer>
 
 
     <div class="col-12-middle center built ">
       <p> 
-        <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a> x <br class="desktop-hide" /><a href="https://throughthelyns.com/" class="padded-sides">  Through the Lyns </a> <a href="/" class="padded-right"> © Website for Content Creators</a>
+        <a href="https://www.kingcode.uk" class="padded-sides"> Website by King Code </a> x <br class="desktop-hide" /><a href="https://throughthelyns.com/" class="padded-sides">  Through the Lyns </a> <a href="/" class="padded-right"> © The Weekend Wanders</a>
       </p>
     </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
