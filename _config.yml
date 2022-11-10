@@ -337,6 +337,11 @@ _array_structures:
             statistic-title-font: 
             subheading-font: 
             textarea-font: 
+      - label: Newsletter Script
+        icon: letter
+        value:
+          _section-type: newsletter-script
+          insert-script-here: 
 fonts:
 _select_data:
   fonts:
