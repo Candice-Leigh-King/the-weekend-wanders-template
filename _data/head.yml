@@ -1,3 +1,4 @@
-first-script-to-go-in-the-head:
-second-script-to-go-in-the-head:
-third-script-to-go-in-the-head:
+scripts-to-go-in-the-head:
+  first:
+  second:
+  thrid:
