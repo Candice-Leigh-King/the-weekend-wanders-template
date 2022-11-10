@@ -1,4 +1,3 @@
-comment: You can add up to 3 different scripts like Google Ananlytics, scripts for newsletter sign ups, Facebook Pixel, etc.
 frist-script-to-go-in-the-head: >-
   <script>   (function(w, d, t, h, s, n) {     w.FlodeskObject = n;     var fn =
   function() {       (w[n].q = w[n].q || []).push(arguments);     };     w[n] =
