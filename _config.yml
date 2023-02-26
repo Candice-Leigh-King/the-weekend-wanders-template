@@ -11,8 +11,45 @@ defaults:
       type: "pages" 
     values:
       layout: "connect-tree" # overrides previous default layout
+  -
+    scope:
+      path: "/products"
+      type: "pages"
+    values:
+      layout: "product-pages"
+  -
+    scope:
+      path: "affiliates"
+      type: "pages" 
+    values:
+      layout: "affiliates" # overrides previous default layout
+
+collections:
+ products:
+   enabled: true
+   output: true
 
 _inputs:
+  textarea_html:
+    options:
+      blockquote: true
+      bold: true
+      format: p h1 h2 h3 h4 h5 h6
+      italic: true
+      strike: true
+      underline: true 
+      link: true
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      styles: /custom-styles.css
+      left: left
+      center: center
+      right: right
+      image: true
+      undo: true
+      redo: true
+      
   content-block-link:
     comment: If you would like this section to be linked through the navigation, then you'll need to add an ID. The ID can be added in the below box. Your ID is 1 word describing the section it is leading to. For example - about. For more detailed instructions on how to link your pages and content blocks to the navigation, please visit our YouTube tutorial here - https://www.youtube.com/watch?v=odzPwMfEaxU. If you don't want this section to link from the navigation, you can simply leave it out.
   colors.subheading-mobile-color:
@@ -20,9 +57,7 @@ _inputs:
   colors.on-mobile-text-color: 
     comment: This is to change the color of the text on mobile only.
   insert-script-here:
-    comment: If you have an email list that you'd like your audience to subscript to, you can add the script here.
-  frist-script-to-go-in-the-head:
-   comment: You can add up to 3 different scripts like Google Ananlytics, scripts for newsletter sign ups, Facebook Pixel, etc.
+    comment: To change the styles here, change them in your email marketing settings then copy and paste the script here again. 
 
 page_blocks: []
 _array_structures:
@@ -341,11 +376,100 @@ _array_structures:
             statistic-title-font: 
             subheading-font: 
             textarea-font: 
+      - label: Blog Article
+        icon: view_headline
+        value:
+          _section-type: blog-article
+          textarea_html:
+          colors:
+            background-color:
+            text-color: 
+            heading-color: 
+            subheading-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font:
+      - label: Text and Image
+        icon: art_track
+        value:
+          _section-type: text-and-image 
+          image: 
+          textarea_html: 
+          colors:
+            background-color: 
+            text-color:
+            heading-color: 
+            subheading-color: 
+          fonts:
+            heading-font: 
+            subheading-font: 
+            text-font:
+      - label: Space
+        icon: block
+        value:
+          _section-type: space-block
+          background-color:
       - label: Newsletter Script
         icon: forum
         value:
           _section-type: newsletter-script
           insert-script-here: 
+      - label: Signature
+        icon: draw
+        value:
+          _section-type: signature
+          signature:
+          signature-color:
+          signature-font:
+          background-color:
+      - label: 3 Recent Blogs
+        icon: view_column
+        value:
+          _section-type: recent-blogs
+          heading:
+          colors:
+            background-color:
+            heading-color: 
+            blog-title-card-color:
+            blog-title-card-border-color: 
+            blog-hover-overlay-color: 
+            text-color:
+            subheading-color:
+            cta-color:
+          fonts:
+            text-font: 
+            heading-font: 
+            subheading-font: 
+            cta-font:
+      - label: Google Map
+        icon: place
+        value:
+          _section-type: google-map
+          heading:
+          insert-google-map-script-here:
+          border-radius:
+            laptop:  
+              top-left-corner:
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            tablet: 
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+            mobile:
+              top-left-corner: 
+              top-right-corner: 
+              bottom-left-corner: 
+              bottom-right-corner: 
+          fonts:
+            heading-font:
+          colors:
+            heading-color:
+            border-color:
+            background-color:  
 fonts:
 _select_data:
   fonts:
