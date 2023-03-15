@@ -18,7 +18,7 @@ border-radius:
   bottom-left-corner: 0%
   bottom-right-corner: 0%
 fonts:
-  link-font: La Obrige
+  link-font: Shrikhand, cursive
 social-link-colors:
   icon-color: '#b5bfaf'
   background-color: '#ffffff'
