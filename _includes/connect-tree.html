@@ -1,5 +1,48 @@
 <style>
+  #content-blocks-{{forloop.index0}} .connect-tree {background-color: {{page.background-color}};}
   
+   #content-blocks-{{forloop.index0}} .top-image-border {border: 2.5px solid {{page.top-image.border-color}};}
+  
+   #content-blocks-{{forloop.index0}} .bottom-image-border {border: 2.5px solid {{page.bottom-image.border-color}};}
+  
+   #content-blocks-{{forloop.index0}} .padded {padding: 5%;}
+  
+   #content-blocks-{{forloop.index0}} .connect-tree 
+      {
+      background-size: cover;
+      background-position: center;
+      }
+  
+   #content-blocks-{{forloop.index0}} .connect-tree .connect-tree-image 
+      {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 100%;
+      }
+  
+  #content-blocks-{{forloop.index0}}  .connect-tree-links p
+      {padding: 3%;  }
+  
+   #content-blocks-{{forloop.index0}} .connect-tree-links a:hover
+      {background-color: transparent;}
+  
+  
+  #content-blocks-{{forloop.index0}}  .connect-tree-links a 
+      {
+      padding: .8rem 2rem .6rem;
+      border-radius: 100px;
+      border: 2.5px solid {{item.links.border-color}};
+      background-color: {{page.links.background-color}};
+      color: {{page.links.text-color}};
+      font-family: {{page.links.font}};
+      }
+  
+   #content-blocks-{{forloop.index0}} .connect-tree-links a:hover 
+      {
+      color: {{page.links.background-color}};
+      border: 2.5px solid {{page.links.background-color}};
+      }
 </style>
 
 <body class="connect-tree grid-middle padded">
