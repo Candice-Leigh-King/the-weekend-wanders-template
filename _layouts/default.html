@@ -70,6 +70,139 @@ layout: connect-tree
         </div>
       </nav>
     </header>
+          <style>
+        :root {
+
+          /* --------------NAVIGATION------------ */
+        
+          --hamburgerColor: {{site.data.navigation.colors.hamburger-color}};
+          --backgroundColor: {{site.data.navigation.colors.background-color}};
+          --textareaBackgroundColor: {{site.data.navigation.colors.textarea-background-color}};
+          --BorderColor: {{site.data.navigation.colors.border-color}};
+          --topLeftCorner: {{site.data.navigation.border-radius.top-left-corner}};
+          --topRightCorner: {{site.data.navigation.border-radius.top-right-corner}};
+          --bottomLeftCorner: {{site.data.navigation.border-radius.bottom-left-corner}};
+          --bottomRightCorner: {{site.data.navigation.border-radius.bottom-right-corner}};
+          --linkColor: {{site.data.navigation.colors.link-color}};
+          --linkFont: {{site.data.navigation.fonts.link-font}};
+          --HoverLinkColor: {{site.data.navigation.colors.hover-link-color}};
+          --iconColor: {{site.data.navigation.social-link-colors.icon-color}};
+          --navSocialsBorderTopRight: {{site.data.navigation.icons-border-radius.top-right-corner}};
+          --navSocialsBorderTopLeft: {{site.data.navigation.icons-border-radius.top-left-corner}};
+          --navSocialsBorderBottomRight: {{site.data.navigation.icons-border-radius.bottom-right-corner}};
+          --navSocialsBorderBottomLeft: {{site.data.navigation.icons-border-radius.bottom-left-corner}};
+          --iconBackgroundColor: {{site.data.navigation.social-link-colors.background-color}};
+          --iconBorderColor: {{site.data.navigation.social-link-colors.border-color}};
+          --iconHoverColor: {{site.data.navigation.social-link-colors.icon-hover-color}};
+          --exitColor: {{site.data.navigation.colors.exit-color}};
+          --exitHoverColor: {{site.data.navigation.colors.exit-hover-color}};
+
+          /* -------------FOOTER----------- */
+          --footerBackgroundColor: {{site.data.footer.colors.background-color}};
+          --footerBorderColor: {{site.data.footer.colors.border-color}};
+          --socialIconsBackgroundColor: {{site.data.footer.colors.social-icons-background-color}};
+          --subfooterHoverColor: {{site.data.footer.colors.subfooter-hover-color}};
+          --subfooterFont: {{site.data.footer.fonts.subfooter-font}};
+
+          --editor-panel-zindex: 90;
+      
+          
+        }
+
+        /* --------NAVIGTION--------- */
+
+        .hamburger-color {color: var(--hamburgerColor);}
+        .navigation-background-color {background-color: var(--backgroundColor);}
+        .textarea-background-color 
+          {
+          background-color: var(--textareaBackgroundColor);
+          border: 4px solid var(--BorderColor);
+          border-top-left-radius: var(--topLeftCorner);
+          border-top-right-radius: var(--topRightCorner);
+          border-bottom-left-radius: var(--bottomLeftCorner);
+          border-bottom-right-radius: var(--bottomRightCorner);
+          }
+          
+        .navigation-links a
+          {
+          color: var(--linkColor);
+          font-family: var(--linkFont);
+          } 
+
+        .navigation-links a:hover {color: var(--HoverLinkColor);} 
+
+        .navigation-socials  
+          {
+          background-color: var(--iconBackgroundColor);
+          border: 1px solid var(--iconBorderColor);
+          }
+          
+        .navigation-socials a { color: var(--iconColor);} 
+        .navigation-socials a:hover   {color:var(--iconHoverColor);}
+        .navigation-socials
+          {
+          border-top-right-radius: var(--navSocialsBorderTopRight);
+          border-top-left-radius:  var(--navSocialsBorderTopLeft);
+          border-bottom-left-radius:  var(--navSocialsBorderBottomLeft);
+          border-bottom-right-radius:  var(--navSocialsBorderBottomRight);
+          }  
+
+        .exit {color: var(--exitColor);}
+
+        .exit:hover {color: var(--exitHoverColor);}
+        
+        .fixed-socials 
+          {
+          background-color: var(--iconBackgroundColor);
+          border-top: 1px solid var(--iconBorderColor);
+          border-left: 1px solid var(--iconBorderColor);
+          border-bottom: 1px solid var(--iconBorderColor);
+          }
+
+        .fixed-socials a {color: var(--iconColor);}  
+
+        .fixed-socials a:hover 
+          {color:var(--iconHoverColor);}
+
+        /* ----------FOOTER---------- */
+
+        .footer-background-color 
+          {
+          background-color: var(--footerBackgroundColor);
+          border-top: 1px solid var(--footerBorderColor);
+          }
+
+        .social-icons-color a 
+          {
+          color: var(--footerBackgroundColor);
+          background-color: var(--socialIconsBackgroundColor);
+          border: solid var(--socialIconsBackgroundColor);
+          }
+        
+        .social-icons-color a:hover
+          {
+          color: var(--socialIconsBackgroundColor);
+          background-color: transparent;
+          border: solid var(--socialIconsBackgroundColor);
+          }
+
+        .built {background-color: var(--footerBackgroundColor);}
+
+        .built a 
+          {
+          color: var(--socialIconsBackgroundColor);
+          font-family: var(--subfooterFont);
+          }
+
+        .built p 
+          {
+          color: var(--socialIconsBackgroundColor);
+          font-family: var(--subfooterFont);
+          }
+
+        .built a:hover {color: var(--subfooterHoverColor);}
+
+        </style>
    
 
     {{content}}
