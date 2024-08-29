@@ -470,6 +470,54 @@ _array_structures:
             heading-color:
             border-color:
             background-color:  
+      - label: Connect Tree
+        icon: signpost
+        value:
+          _section-type: connect-tree
+          heading: Brit & Tara
+          images:
+            top-image: /uploads/843b33d4-602b-4f35-abce-94cac5c1bf47-1-105-c.jpeg
+            bottom-image: /uploads/843b33d4.jpeg
+          textarea_html: >- 
+            <p><a href="https://thewkndwanders.myflodesk.com/snyoptruot"><b>Free</b> Florida Springs Guide </a></p>
+            <p><a href="https://www.amazon.com/shop/the.weekend.wanders">★ &nbsp; &nbsp; Shop Our Amazon</a></p>
+            <p><a href="https://thriftytraveler.com/refer/?referralCode=0a298b03-8656-46fa-b777-97329c808f01"> $20 off your flights</a></p>
+            <p><a href="https://thewkndwanders.com">™ &nbsp;Website</a></p>
+            <p><a href="https://thewkndwanders.com/media-kit.html"> Media Kit</a></p>
+            <p><a href="https://crrnt.app/VESSI/JN8oMW46">10% off Waterproof Shoes</a></p>
+            <p><a href="https://beistravel.com/?ll_ref_id=kRV9AEbiB">🧳 &nbsp; 15% off Travel Luggage </a></p>
+            <p><a href="https://airalo.tp.st/zfHLLH87">The Best eSIM $3 off coupon code: <u>TARA4132</u></a></p>
+            <p><a href="https://www.tiktok.com/@the.weekend.wanders">TikTok</a></p>
+            <p><a href="https://www.youtube.com/@theweekendwanders">Youtube</a></p>
+          colors:  
+            background-color: '#b5bfaf'
+            top-border-color: '#a1a7a7'
+            bottom-border-color: '#a1a7a7'
+          links:
+            background-color: '#ece7e1'
+            border-color: '#a1a7a7'
+            text-color: '#2f3031'
+            background-hover-color: 'green'
+            text-hover-color: '#white'
+      - label: New Category
+        icon: category
+        value:
+          _section-type: new-category
+          category: connect-tree
+          colors:
+            background-color: ''
+            blog-title-card-color: '#ece7e1'
+            blog-title-card-border-color: '#ffffff'
+            blog-hover-overlay: rgba(161, 167, 167, 0.5)
+            text-color: '#2f3031'
+            heading-color: '#b5bfaf'
+            subheading-color: '#ffffff'
+            cta-color: '#ffffff'
+          fonts:
+            text-font: Montserrat, sans-serif
+            heading-font: Shrikhand, cursive
+            subheading-font: Shrikhand, cursive
+            cta-font: Oooh Baby, cursive
 fonts:
 _select_data:
   fonts:
