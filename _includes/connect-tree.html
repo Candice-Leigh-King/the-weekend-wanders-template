@@ -30,8 +30,9 @@
   
   #content-blocks-{{forloop.index0}}  .connect-tree-links a 
       {
-      padding: .8rem 2rem .6rem;
-      border-radius: 100px;
+      padding: .8rem 1rem .6rem;
+      border-radius: 90px;
+      display: block;
       border: 2.5px solid {{item.links.border-color}};
       background-color: {{item.links.background-color}};
       color: {{item.links.text-color}};
@@ -60,18 +61,10 @@
       </div>  
     
     <div class="col-12 grid-center">
-      <div class="col-12-center connect-tree-links padded">
+      <div class="col-12-center connect-tree-links padded-1">
         {{item.textarea_html}}
       </div>
     </div>  
-    <div class="col-12 grid-right">
-      <div class="col-6">
-        <div class="connect-tree padded">
-          <div class="connect-tree-image border-hover-image bottom-image-border " style="background-image:url('{{item.images.bottom-image}}'); ">
-            </div>
-          </div> 
-        </div>
-      </div>  
   
   </section>
 </section>

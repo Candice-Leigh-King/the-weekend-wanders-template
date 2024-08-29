@@ -1,4 +1,133 @@
+<style>
+  .blog-background-color
+    {background-color: {{item.colors.background-color}};}
 
+  .blog-hover-overlay:hover 
+   {background-color: {{item.colors.blog-hover-overlay-color}};}
+
+  .bump 
+   {
+   background-color: {{item.colors.blog-title-card-color}};
+   border-top: solid 4px {{item.colors.blog-title-card-border-color}};
+   border-left: solid 4px {{item.colors.blog-title-card-border-color}};
+   }
+  
+  .border-top
+  {
+  border-top: 1px solid {{item.colors.categories-color}};  
+  }
+
+  .border-bottom
+  {
+  border-bottom: 1px solid {{item.colors.categories-color}};  
+  }
+  
+  p
+  {
+  font-family: {{item.fonts.text-font}};
+  color: {{item.colors.text-color}};
+  }
+
+      
+  h2 
+  {
+  font-size: 3rem;
+  font-family: {{item.fonts.heading-font}};
+  color: {{item.colors.heading-color}};
+  }
+
+  h3 
+  {
+  font-size: 2rem;
+  font-family: {{item.fonts.subheading-font}};
+  color: {{item.colors.subheading-color}};
+  }
+  
+  h5
+  {
+  font-size: 2rem;
+  font-family: {{item.fonts.cta-font}};
+  }
+
+  .blog-hover-overlay:hover
+  {
+  color: {{item.colors.cta-color}};
+  }
+
+  .categories p
+  {
+  font-size: 1.3rem;
+  font-family: {{item.fonts.categories-font}};
+  color: {{item.colors.categories-color}};
+  }
+
+  .categories a:hover 
+  {color: {{item.colors.categories-hover-color}};}
+  
+  .menu {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1.2px #dcd3cc;
+  border-bottom: solid 1.2px #dcd3cc;
+  padding: 10px;
+}
+
+.container {
+display: flex;
+justify-content: space-between; /* Distribute items evenly */
+width: 100%; /* Full width */
+}
+
+/* Apply styles to anchor elements */
+.container a {
+text-decoration: none; /* Remove underline */
+color: #333; /* Text color */
+padding: 10px 30px; /* Adjust padding as needed */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  min-width: 190px;
+  top: 3.2rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style for sub-dropdowns */
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 100;
+  left: 100%;
+  top: 0;
+}
+
+.sub-dropdown-content a {
+ border-bottom: solid 1px {{item.colors.categories-color}};
+}
+</style>
 
   {% for block in page.content-blocks %}
   {% if block._section-type == 'new-category' %}
