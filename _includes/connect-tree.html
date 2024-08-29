@@ -1,9 +1,9 @@
 <style>
   #content-blocks-{{forloop.index0}} .connect-tree {background-color: {{item.background-color}};}
   
-   #content-blocks-{{forloop.index0}} .top-image-border {border: 2.5px solid {{item.top-image.border-color}};}
+   #content-blocks-{{forloop.index0}} .top-image-border {border: 2.5px solid {{item.colors.top-border-color}};}
   
-   #content-blocks-{{forloop.index0}} .bottom-image-border {border: 2.5px solid {{item.bottom-image.border-color}};}
+   #content-blocks-{{forloop.index0}} .bottom-image-border {border: 2.5px solid {{item.colors.bottom-border-color}};}
   
    #content-blocks-{{forloop.index0}} .padded {padding: 5%;}
   
@@ -32,16 +32,16 @@
       {
       padding: .8rem 2rem .6rem;
       border-radius: 100px;
-      border: 2.5px solid {{item.links.border-color}};
-      background-color: {{item.links.background-color}};
-      color: {{item.links.text-color}};
-      font-family: {{item.links.font}};
+      border: 2.5px solid {{item.colors.links.border-color}};
+      background-color: {{item.colors.links.background-color}};
+      color: {{item.colors.links.text-color}};
+      font-family: {{item.fonts.links-font}};
       }
   
    #content-blocks-{{forloop.index0}} .connect-tree-links a:hover 
       {
       color: {{item.links.background-color}};
-      border: 2.5px solid {{item.links.background-color}};
+      border: 2.5px solid {{item.colors.links.background-hover-color}};
       }
 </style>
 
@@ -64,7 +64,7 @@
   <div class="col-12 grid-right">
     <div class="col-6">
       <div class="connect-tree padded">
-        <div class="connect-tree-image border-hover-image bottom-image-border " style="background-image:url('{{page.images.bottom-image}}'); ">
+        <div class="connect-tree-image border-hover-image bottom-image-border " style="background-image:url('{{item.images.bottom-image}}'); ">
           </div>
         </div> 
       </div>
