@@ -1,9 +1,9 @@
 <style>
-  #content-blocks-{{forloop.index0}} .connect-tree {background-color: {{page.background-color}};}
+  #content-blocks-{{forloop.index0}} .connect-tree {background-color: {{item.background-color}};}
   
-   #content-blocks-{{forloop.index0}} .top-image-border {border: 2.5px solid {{page.top-image.border-color}};}
+   #content-blocks-{{forloop.index0}} .top-image-border {border: 2.5px solid {{item.top-image.border-color}};}
   
-   #content-blocks-{{forloop.index0}} .bottom-image-border {border: 2.5px solid {{page.bottom-image.border-color}};}
+   #content-blocks-{{forloop.index0}} .bottom-image-border {border: 2.5px solid {{item.bottom-image.border-color}};}
   
    #content-blocks-{{forloop.index0}} .padded {padding: 5%;}
   
@@ -33,15 +33,15 @@
       padding: .8rem 2rem .6rem;
       border-radius: 100px;
       border: 2.5px solid {{item.links.border-color}};
-      background-color: {{page.links.background-color}};
-      color: {{page.links.text-color}};
-      font-family: {{page.links.font}};
+      background-color: {{item.links.background-color}};
+      color: {{item.links.text-color}};
+      font-family: {{item.links.font}};
       }
   
    #content-blocks-{{forloop.index0}} .connect-tree-links a:hover 
       {
-      color: {{page.links.background-color}};
-      border: 2.5px solid {{page.links.background-color}};
+      color: {{item.links.background-color}};
+      border: 2.5px solid {{item.links.background-color}};
       }
 </style>
 
